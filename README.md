@@ -12,6 +12,6 @@
 
 3. After a research “wave”
 - Update the relevant synthesis/*.md file with:
-- list of interviews considered
-- themes
-- mapped requirements.
+	- list of interviews considered
+	- themes
+	- mapped requirements.
