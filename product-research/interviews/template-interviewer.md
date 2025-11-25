@@ -1,7 +1,7 @@
 ---
-segment: Mid-market / B2B
-date: 2025-11-03
-product_area: Cayley
+segment: SPOs
+date: 2025-11-25
+product_area: Blockfrost
 pm_owner: akash
 source: "Gemini transcript + notes"
 ---
@@ -30,4 +30,6 @@ Short description of the user, their role, and why we spoke to them.
 - JTBD:
 - Suggested requirements:
 
-[//]: <> When you do an interview, copy this file, rename it e.g.: ux-research/interviews/2025-11-03-int-001-wallet-integrator.md and update the front-matter + sections.
+## Note - how to use this:
+
+When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
