@@ -1,7 +1,7 @@
 # product-research-automation
 
 1.	After each call
-  - Duplicate template-interview.md into ux-research/interviews/.
+  - Duplicate template-interview.md into product-research/interviews/.
 	- Fill:
 	  - front-matter (ID, persona, date, product_area)
 	  - Context, Raw notes, Key pains, JTBD
