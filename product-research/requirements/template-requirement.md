@@ -5,7 +5,7 @@ Status: Choose between proposed, accepted, shipped or rejected
 product_area: Blockfrost
 Related_interviews: client1-SPO-001, client2-SPO-001 etc
 Related_features: Add as needed
-owner: Akash
+Owner: Akash
 ---
 
 ## Problem
