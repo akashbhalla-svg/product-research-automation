@@ -1,4 +1,4 @@
-<> When you formalise a requirement, copy this template, rename e.g.: ux-research/requirements/req-001-hopper-fee-visibility.md and link interviews via related_interviews.
+// When you formalise a requirement, copy this template, rename e.g.: ux-research/requirements/req-001-{feature-name}.md and link interviews via related_interviews.
 
 ---
 requirement_id: REQ-001
