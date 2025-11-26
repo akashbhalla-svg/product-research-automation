@@ -26,12 +26,8 @@ Short description of the user, their role, and why we spoke to them.
 - REQ-002 – Short title
 
 ## Gemini-normalised summary
-(To be filled/updated by automation in future)
-- Persona:
-- Top 3 pains:
-- JTBD:
-- Suggested requirements:
 
+_(No AI summary generated – please fill in manually.)_
 ## Note - how to use this:
 
 When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
