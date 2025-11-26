@@ -16,7 +16,7 @@
 
 ## Linking
 
-- Each **interview** file has `interview_id` in front-matter.
+- Each **interview** file has an `interview_id` to be written as 
 - Each **requirement** file has:
   - `requirement_id`
   - `related_interviews: [INT-2025-001, INT-2025-004]`
