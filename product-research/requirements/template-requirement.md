@@ -2,10 +2,10 @@
 
 ---
 requirement_id: REQ-001
-title: Improve Hopper fee visibility for integrators
-status: proposed       # proposed | accepted | shipped | rejected
-product_area: Hopper
-related_interviews: [INT-2025-001, INT-2025-004]
+title: Improve Hopper fee visibility for Icebreakers
+status: proposed | accepted | shipped | rejected
+product_area: Blockfrost
+related_interviews: [SPO-001, ]
 related_features: []
 owner: akash
 ---
