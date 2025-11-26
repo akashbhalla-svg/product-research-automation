@@ -1,5 +1,7 @@
 ---
-segment: SPOs
+interview_id: client1-blockfrost-001 <client>-<product>-<sequence> 
+persona: SPO
+segment: Mid-market / B2B
 date: 2025-11-25
 product_area: Blockfrost
 pm_owner: akash
