@@ -3,10 +3,10 @@
 ---
 requirement_id: REQ-001
 title: Improve Hopper fee visibility for Icebreakers
-status: proposed | accepted | shipped | rejected
+status: Choose between proposed, accepted, shipped or rejected
 product_area: Blockfrost
-related_interviews: [SPO-001, ]
-related_features: []
+related_interviews: client1-SPO-001, client2-SPO-001 etc
+related_features: Add as needed
 owner: akash
 ---
 
