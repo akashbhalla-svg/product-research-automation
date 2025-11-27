@@ -39,7 +39,24 @@ https://docs.google.com/document/d/1oTAdwK8Pxj-do_FwNbI9m9cAxWvv6b41XuaoOHiaTvc/
 - REQ-003 – Provide strong SLAs and observability for slice freshness and correctness.
 
 ## Gemini-normalised summary
+- Persona: Mid-size Cardano SPO operator managing indexers and analytics tools.
+- Top 3 pains:
+  - APIs are optimized for "latest state," making longitudinal analysis and historical queries difficult to execute.
+  - Maintaining internal full indexes and ad-hoc scripts to cache data slices is costly, brittle, and time-consuming.
+  - Lack of reliable, domain-specific slices (e.g., delegation history) necessitates running heavy infrastructure just to debug issues.
+- JTBD:
+  - Query a reliable historical slice to investigate a delegator’s history without having to re-index data manually.
+  - Access clean primitives for stake movement over time to power monitoring and alerting systems.
+- Suggested requirements:
+  - REQ-001 – Define “delegation history” slice as a first-class primitive.
+  - REQ-002 – Allow SPOs to subscribe to managed historical slices without running infra.
+  - REQ-003 – Provide strong SLAs and observability for slice freshness and correctness.
 
+SOURCE_ANALYSIS = {
+  "used_pm_notes": 100,
+  "used_transcript": 0,
+  "reasoning": "The transcript describes an internal technical discussion about 'Kfish', intents, and ZK proofs, which is completely unrelated to the user interview with 'Kora' regarding SPO historical data needs described in the PM notes."
+}
 ## Note - how to use this:
 
 When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
