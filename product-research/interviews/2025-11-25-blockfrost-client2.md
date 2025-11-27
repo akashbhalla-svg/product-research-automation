@@ -39,13 +39,18 @@ https://docs.google.com/document/d/1oTAdwK8Pxj-do_FwNbI9m9cAxWvv6b41XuaoOHiaTvc/
 - REQ-003 – Provide strong SLAs and observability for slice freshness and correctness.
 
 ## Gemini-normalised summary
-- Persona: Unknown (no interview data provided)
+- Persona: Mid-size Cardano Stake Pool Operator (SPO) managing custom analytics and indexing infrastructure.
 - Top 3 pains:
-  - (No data provided)
+  - APIs are optimized for "latest state," making historical or longitudinal analysis difficult and requiring ad-hoc scripts.
+  - Maintaining internal full-node infrastructure and re-indexing data is fragile, costly, and time-consuming.
+  - Lack of reliable, domain-specific data "slices" (e.g., delegation history) forces manual data curation.
 - JTBD:
-  - (No data provided)
+  - Query reliable historical data slices to investigate delegator behavior without running heavy infrastructure.
+  - Access clean primitives for stake movement over time to power monitoring and alerting systems.
 - Suggested requirements:
-  - (None clearly identified)
+  - REQ-001 – First-class "delegation history" slice primitive.
+  - REQ-002 – Managed subscriptions for historical slices (SaaS model without infra overhead).
+  - REQ-003 – SLAs and observability for slice freshness and data correctness.
 ## Note - how to use this:
 
 When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
