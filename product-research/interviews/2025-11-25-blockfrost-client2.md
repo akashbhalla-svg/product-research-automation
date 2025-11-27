@@ -21,6 +21,9 @@ We spoke to them to understand how they query historical chain data and what gap
 - Wants a way to subscribe to a “slice” and trust it stays fresh and correct over time.
 - Says they would pay more for reliability + support than for pure raw throughput.
 
+## Transcript links
+https://docs.google.com/document/d/1oTAdwK8Pxj-do_FwNbI9m9cAxWvv6b41XuaoOHiaTvc/edit?tab=t.mmry5tltwyaj
+
 ## Key pains (human-curated)
 - Hard to get consistent, queryable historical views without running heavy infra.
 - Current APIs don’t expose domain concepts (delegation histories, stake journeys) as first-class slices.
