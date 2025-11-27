@@ -40,23 +40,27 @@ https://docs.google.com/document/d/1nYSxzZNyHzRm9guPZHH6auT9MaF21DgL1ri1RWfmu5o/
 - REQ-012 – Simple finance-friendly export (CSV / API) for internal reporting.
 
 ## Gemini-normalised summary
-- Persona: Head of Engineering at a mid-size SaaS company
+- Persona: Head of Engineering at a mid-size SaaS company building Cardano features.
 - Top 3 pains:
-  - Lack of granular cost transparency per feature or project.
-  - Fear of surprise bills resulting from sudden traffic spikes.
-  - Difficulty explaining complex chain and API costs to finance teams for budget approval.
+  - Lack of visibility into costs broken down by specific features or projects.
+  - Anxiety regarding surprise bills caused by sudden traffic spikes during campaigns.
+  - Difficulty explaining complex chain and API cost models to strict finance teams for budget approval.
 - JTBD:
-  - When shipping a new chain-backed feature, I want to forecast and monitor its cost so I can get finance sign-off.
-  - When traffic spikes, I want guardrails and alerts so we don’t accidentally exceed our budget.
+  - When shipping new chain-backed features, I want to forecast and monitor costs so I can secure finance sign-off.
+  - When traffic spikes occur, I want automated guardrails so we do not accidentally exceed our budget.
 - Suggested requirements:
-  - REQ-010 – Per-project and per-feature cost dashboards with historical views
-  - REQ-011 – Budget caps and soft/hard alerts at the project level
-  - REQ-012 – Simple finance-friendly export (CSV / API) for internal reporting
+  - REQ-010 – Per-project and per-feature cost dashboards with historical views.
+  - REQ-011 – Budget caps and soft/hard alerts at the project level.
+  - REQ-012 – Simple finance-friendly export (CSV / API) for internal reporting.
+- Other useful notes:
+  - User embeds Cardano actions behind their own REST API; end users do not see the provider directly.
+  - Usage is highly spiky (release days/campaigns).
+  - Finance pushback is currently limiting their ability to experiment with new features.
 
 SOURCE_ANALYSIS = {
   "used_pm_notes": 100,
   "used_transcript": 0,
-  "reasoning": "The transcript describes a technical meeting regarding 'Lace Order Book' and 'beacon tokens', which is unrelated to the PM notes describing a SaaS company's pains with billing transparency and finance approvals; per instructions, the unrelated transcript was ignored."
+  "reasoning": "The transcript discusses technical endpoint specifications (Lace order book, beacon tokens) which is unrelated to the PM notes' focus on API billing, cost transparency, and finance approvals; per instructions, the unrelated transcript was ignored."
 }
 ## Note - how to use this:
 
