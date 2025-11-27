@@ -39,7 +39,13 @@ https://docs.google.com/document/d/1oTAdwK8Pxj-do_FwNbI9m9cAxWvv6b41XuaoOHiaTvc/
 - REQ-003 – Provide strong SLAs and observability for slice freshness and correctness.
 
 ## Gemini-normalised summary
-
+- Persona: Unknown (no interview data provided)
+- Top 3 pains:
+  - (No data provided)
+- JTBD:
+  - (No data provided)
+- Suggested requirements:
+  - (None clearly identified)
 ## Note - how to use this:
 
 When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
