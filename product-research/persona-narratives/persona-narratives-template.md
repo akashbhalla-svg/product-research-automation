@@ -2,9 +2,7 @@ This document captures the real-world story of our users. It is based on custome
 
 It’s expected that there are multiple user stories for a product – perhaps one for each feature or flow.
 
-PLEASE REMOVE THE BLUE DESCRIPTION SECTIONS ONCE YOU ADD CONTENT
-
-1. Persona Profile
+## 1. Persona Profile
 
 Identify the persona this narrative is about. This should link directly to one of the high-level personas from your MRD (e.g., "Consumer, Crypto Novice" or "Developer, DApps").
 
@@ -14,7 +12,7 @@ Role / Context: [A 1-2 sentence description of who they are, e.g., "A DApp devel
 
 Primary Goal: [What is this user trying to accomplish in this story? e.g., "Deploying their first smart contract on our testnet."]
 
-2. The "Day in the Life" Narrative
+## 2. The "Day in the Life" Narrative
 
 This is the core of the document. Write a story from the user's perspective (or as an observer) that details their current process for achieving their goal. Be descriptive. Walk through the steps they take, the tools they use, and where they struggle.
 
@@ -38,7 +36,7 @@ Now in the wallet, she sees a 'Staking' tab. She clicks it and is presented with
 
 She spends 20 minutes trying to find an article explaining what to choose. Frustrated, she just picks one at the top of the list, stakes her $100, and closes the app, hoping she did the right thing... [This is a problem: lack of confidence, 'guesswork' decision-making]."
 
-3. Summary of Problems & Deficiencies
+## 3. Summary of Problems & Deficiencies
 
 Based on the narrative above, explicitly list the problems and deficiencies you observed. This list is what you will use to generate your requirements.
 
@@ -52,7 +50,7 @@ Problem 4: Key terminology (e.g., 'Margin,' 'Pledge') is undefined and confusing
 
 Problem 5: Users are forced to make uninformed 'guesses' when choosing a pool, leading to low confidence.
 
-4. User's "Ideal" Scenario (Opportunities)
+## 4. User's "Ideal" Scenario (Opportunities)
 
 Briefly describe what a successful solution would look like from the user's perspective. This helps frame the "so that..." part of your future requirements.
 
