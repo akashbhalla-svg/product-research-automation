@@ -63,3 +63,5 @@ Feel confident when transferring funds, maybe with an address-checking feature.
 Be presented with a simple, curated list of "recommended" pools instead of 500 choices.
 
 Be able to understand her potential rewards in simple dollar or percentage terms."
+
+## Gemini-normalised summary
