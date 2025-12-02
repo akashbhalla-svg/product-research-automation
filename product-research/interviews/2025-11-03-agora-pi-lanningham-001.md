@@ -44,3 +44,24 @@ https://docs.google.com/document/d/1hGtEtGCKqbRWwYapWLBKcYRalbss9SZkPlFIHTdNfM0/
 -   **REQ-005 – Hybrid Registry:** Use L1 for long-lived topic discovery but allow off-chain/ephemeral registries for short-lived topics to reduce chain overhead.
 
 ## Gemini-normalised summary
+- Persona: Lead/CTO of a major DApp (Sunday Labs), representing both DApp developers and core infrastructure builders.
+- Top 3 pains:
+  - My current communication channels (Twitter, Discord) are insecure, exposing my users to costly phishing attacks and scams from impersonators.
+  - The ecosystem is creating multiple, competing messaging standards, forcing me to learn and implement different protocols which increases my workload and fragments the network.
+  - On-chain settlement for every message makes low-latency use cases impossible due to L1 finality times, blocking interactive applications like gaming or intents.
+- JTBD:
+  - Securely announce critical updates to users without fear of platform compromise or impersonation.
+  - Enable sub-second, interactive communication for applications like gaming or intent matching.
+  - Simplify infrastructure by supporting multiple messaging protocols (e.g., Cardano native, libp2p) within a single stack.
+- Suggested requirements:
+  - REQ-001 – Unified Messaging Standard
+  - REQ-002 – Capacity-Based Payment Model
+  - REQ-003 – Language-Agnostic APIs
+  - REQ-004 – Dual-Stack Protocol Support
+  - REQ-005 – Hybrid On/Off-Chain Registry
+
+SOURCE_ANALYSIS = {
+  "used_pm_notes": 70,
+  "used_transcript": 30,
+  "reasoning": "The PM draft provided a highly accurate and structured summary, which was validated and refined with specific details from the transcript."
+}
