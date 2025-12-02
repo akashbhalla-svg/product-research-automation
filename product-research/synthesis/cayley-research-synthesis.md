@@ -8,23 +8,22 @@ interviews_considered: ["client2-001","client3-001"]
 
 ## Top themes by persona
 - **SPO (Stake Pool Operator):**
-  - Users are running and maintaining expensive, heavy infrastructure primarily to get reliable access to historical on-chain data for analysis and debugging (e.g., a delegator's full history). Existing tools and APIs are built for querying the latest state, not for this kind of longitudinal analysis, leading them to build fragile, time-consuming internal solutions.
+  - SPOs are burdened by the cost and complexity of running their own infrastructure to get reliable historical on-chain data. Current APIs are optimized for "latest state" queries, not the longitudinal analysis they need for tasks like debugging delegator issues or monitoring stake movements over time. They need managed, queryable, and pre-packaged historical data to reduce their operational overhead.
 - **Developer (Head of Engineering):**
-  - Users lack financial visibility and control over their on-chain and API usage. They cannot easily track costs by feature, fear surprise bills from traffic spikes, and struggle to justify infrastructure spending to non-technical stakeholders like finance teams due to opaque billing models.
+  - Developers building on-chain applications lack tools for financial management and predictability. They struggle to understand the cost of their services on a per-feature basis, fear unexpected bills from traffic spikes, and find it difficult to justify infrastructure spending to finance teams due to opaque billing models. They need cost dashboards, budget controls, and reporting tools to align technical operations with business objectives.
 
 ## Cross-cutting pains
-- **Infrastructure Overhead and Cost Management:** Both personas struggle with the cost and complexity of their on-chain operations. The SPO experiences this as the direct operational cost of running nodes for historical data, while the Developer experiences it as opaque and unpredictable API bills. Both lack the tools to effectively manage and justify these costs.
-- **Need for Purpose-Built Tooling:** Existing solutions are too generic. The SPO finds that standard APIs don't support historical analysis, and the Developer finds that billing systems aren't designed for granular, finance-friendly reporting and control.
+- Both personas face significant operational and financial overhead with their current solutions. Whether it's the cost of running heavy infrastructure for historical data (SPOs) or the unpredictable cost of API usage (Developers), there's a clear need for more managed, cost-effective, and predictable services.
+- Both personas need data to be transformed from its raw on-chain state into a more usable, business-friendly format. SPOs need "clean, pre-packaged data primitives" for analysis, while Developers need "finance-friendly data exports" for reporting.
 
 ## Mapped requirements
-- REQ-001 – First-class 'delegation history' data slice
-- REQ-002 – Subscription to managed historical data slices
-- REQ-003 – Per-project and per-feature cost dashboards
-- REQ-004 – Project-level budget caps and alerts
-- REQ-005 – Finance-friendly data export (CSV/API)
+- **REQ-001 – Managed historical data slices:** Provide access to queryable, managed historical data sets as a service, with a specific priority on delegator history for SPOs.
+- **REQ-002 – Cost visibility dashboards:** Offer dashboards that break down API and on-chain costs by project and/or feature.
+- **REQ-003 – Budgeting controls and alerts:** Implement project-level budget caps and automated alerts to prevent cost overruns during traffic spikes.
+- **REQ-004 – Finance-friendly reporting:** Allow for the export of cost and usage data in formats easily consumable by finance teams, such as CSV or via an API.
 
 ## Open questions
-- Are both the SPO and the SaaS Developer core target personas for this product, or should we prioritize one? Their needs for deep data access vs. financial tooling seem quite distinct.
-- For SPOs, what other historical data slices beyond "delegation history" are critical for their operations?
-- For Developers, what specific dimensions are needed for cost attribution (e.g., per-project, per-API-key, per-end-user)?
-- How do these two sets of needs (historical data access and cost management) fit into a single, cohesive product vision?
+- Are we building a single platform for both historical data access (for SPOs) and cost management (for Developers), or are these separate product offerings?
+- For budget controls, is the primary need for alerts, or for hard enforcement (e.g., rate-limiting or blocking requests) once a cap is reached?
+- Beyond delegation history, what are the other highest-priority historical data sets required by SPOs and other potential users?
+- Is there an overlap in needs? Do developers building applications also struggle with historical data queries? Do SPOs need better cost management tools for their own operations?
