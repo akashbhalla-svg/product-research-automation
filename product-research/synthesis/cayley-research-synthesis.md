@@ -7,20 +7,23 @@ interviews_considered: ["client2-001","client3-001"]
 # cayley – Research Synthesis
 
 ## Top themes by persona
-- **SPO (Stake Pool Operator):** Needs reliable, managed access to historical on-chain data to avoid the high cost and complexity of running and maintaining their own indexing infrastructure. Current tools are built for "latest state" queries, not the longitudinal analysis they require for tasks like debugging delegator issues.
-- **Developer (Head of Engineering):** Needs tools for cost visibility, predictability, and control for their on-chain usage. They struggle to track costs per feature, fear surprise bills from traffic spikes, and find it difficult to justify infrastructure spending to non-technical stakeholders like finance.
+- **Persona A: Stake Pool Operator (SPO)**
+  - SPOs are burdened by the cost and complexity of running their own infrastructure to get the historical on-chain data they need for analysis and debugging. Existing APIs are insufficient for their longitudinal analysis needs.
+- **Persona B: Developer**
+  - Developers building on the chain lack financial visibility and control. They struggle with opaque billing models, fear unexpected cost spikes, and find it difficult to forecast or justify infrastructure expenses to finance teams.
 
 ## Cross-cutting pains
-- **High and unpredictable operational/financial overhead:** Both personas are struggling with the cost of building on the platform. For SPOs, it's the cost of running their own heavy infrastructure to get the data they need. For developers, it's the opaque and unpredictable cost of API usage and on-chain fees. Both lack the tools to efficiently manage and justify these costs.
+- **High Operational & Financial Overhead:** Both personas face significant, hard-to-manage costs. For the SPO, it's the expense of running heavy infrastructure. For the Developer, it's the unpredictable cost of API usage. In both cases, the true cost of their on-chain activities is difficult to control and justify.
+- **Inadequacy of Existing Tooling:** Current tools are not fit for purpose. Standard APIs are built for "latest state" queries, not historical analysis, and billing systems lack the granular dashboards, budget controls, and reporting needed for proper financial management.
 
 ## Mapped requirements
-- **REQ-001 – Managed historical data slices:** Provide queryable, pre-packaged historical data sets (e.g., "delegation history") as a managed service to eliminate the need for users to run their own indexers.
-- **REQ-002 – Cost visibility dashboards:** Offer dashboards that break down usage and costs by project and/or feature.
-- **REQ-003 – Budgeting and alerting tools:** Implement project-level budget caps and alerts to prevent unexpected cost overruns during traffic spikes.
-- **REQ-004 – Finance-friendly data exports:** Provide a simple way to export cost and usage data (e.g., CSV or dedicated API) for financial reporting and analysis.
+- **REQ-001 – Managed Historical Data Slices:** Provide reliable, managed, and queryable slices of historical on-chain data (e.g., 'delegation history') to eliminate the user's need to run and maintain their own indexing infrastructure.
+- **REQ-002 – Granular Cost Dashboards:** Offer dashboards that break down API and on-chain costs by project and/or feature, providing clear visibility into spending.
+- **REQ-003 – Budget Controls and Alerts:** Implement project-level budget caps and automated alerts to prevent cost overruns and surprise bills.
+- **REQ-004 – Finance-Friendly Reporting:** Allow cost and usage data to be exported (e.g., CSV, API) in a simple format for non-technical stakeholders like finance departments.
 
 ## Open questions
-- For historical data, what are the most critical data slices beyond "delegation history"? What are the latency and freshness requirements for these queries?
-- For cost management, what is the ideal level of granularity for tracking costs (e.g., per API key, per endpoint, per-feature tag)?
-- How should budget caps be enforced? Should they trigger a hard limit (stopping service) or soft alerts (notifications)?
-- What is the willingness to pay for these distinct capabilities (managed data vs. cost controls)? Are they part of a core subscription tier or add-on products?
+- Are SPOs and SaaS Developers both primary personas for this product, or should we prioritize one set of needs?
+- For historical data, what is the trade-off between offering powerful pre-defined slices (like 'delegation history') versus allowing users to configure their own custom slices?
+- For cost management, what level of granularity is most critical for users to track (e.g., per-project, per-API key, per-feature tag)?
+- Is there any overlap in needs? Would SPOs also find value in cost-management features for their operations?
