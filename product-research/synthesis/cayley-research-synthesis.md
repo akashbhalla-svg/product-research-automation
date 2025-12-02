@@ -1,34 +1,25 @@
 ---
 product_area: cayley
-last_updated: 2025-12-01
+last_updated: 2025-12-02
 interviews_considered: ["client2-001","client3-001"]
 ---
 
 # cayley – Research Synthesis
 
 ## Top themes by persona
-- SPO (Mid-size):
-  - Struggles with APIs optimized only for "latest state," making longitudinal analysis difficult.
-  - High operational burden and cost associated with maintaining full nodes just to access specific domain slices (e.g., delegation history).
-  - Willingness to pay a premium for guaranteed reliability and support rather than raw throughput.
-- Developer (Head of Engineering):
-  - severe anxiety regarding cost management, specifically surprise bills from traffic spikes.
-  - Difficulty securing budget approval due to complex cost models and lack of visibility into per-feature usage.
-  - Needs automated guardrails and clear reporting to satisfy strict finance teams.
+- **SPO:** Stake Pool Operators need reliable, managed access to historical on-chain data. They currently bear the high operational cost and complexity of running their own infrastructure for analysis and debugging, as existing APIs are not built for historical queries.
+- **Developer:** Developers (e.g., Heads of Engineering) building on Cardano need tools for cost visibility, forecasting, and control. They struggle to manage budgets and justify infrastructure spend due to opaque billing models and the fear of unexpected costs from traffic spikes.
 
 ## Cross-cutting pains
-- **Visibility Gaps:** Users lack granular visibility, whether it is historical chain data (SPO) or cost breakdowns by feature (Developer).
-- **Barriers to Scaling:** Both personas face friction scaling their operations—SPOs are limited by fragile infrastructure maintenance, while Developers are limited by finance pushback on unpredictable costs.
-- **Need for Historical Context:** There is a shared need for historical views; SPOs need historical ledger data, while Developers need historical cost/usage data for forecasting.
+- Both personas face significant, hard-to-manage overhead when building on Cardano. For SPOs, this manifests as the operational cost and effort of maintaining infrastructure for historical data access. For developers, it's the financial cost of API usage and on-chain fees, which is opaque and difficult to control.
 
 ## Mapped requirements
-- REQ-001 – First-class "delegation history" slice primitive
-- REQ-002 – Managed historical slice subscriptions
-- REQ-003 – SLAs for slice freshness and correctness
-- REQ-010 – Per-project and per-feature cost dashboards with historical views
-- REQ-011 – Budget caps and soft/hard alerts at the project level
-- REQ-012 – Simple finance-friendly export (CSV / API) for internal reporting
+- **REQ-001 – Managed historical data slices:** Provide managed, queryable historical data products (e.g., a first-class 'delegation history' slice) that users can subscribe to, removing their need to run and maintain their own indexing infrastructure.
+- **REQ-002 – Cost management dashboards:** Offer dashboards that provide granular visibility into costs, broken down by project and/or feature.
+- **REQ-003 – Budgeting and alerting tools:** Implement project-level budget caps and alerts to help teams prevent cost overruns during traffic spikes.
+- **REQ-004 – Finance-friendly reporting:** Create a data export feature (CSV/API) that provides cost and usage data in a format easily consumable by finance departments.
 
 ## Open questions
-- How do we balance the SPO need for premium, high-reliability SLAs with the Developer need for strict budget caps and cost containment?
-- Can the pricing model accommodate the "spiky" nature of SaaS campaigns (Developer) while supporting the continuous, heavy historical queries required by SPOs?
+- Are both the SPO and the SaaS Developer personas primary targets for `cayley`, or should we prioritize one over the other?
+- For SPOs, what are the highest-value historical data sets they need beyond delegation history?
+- For Developers, what specific metrics and formats are required for a 'finance-friendly' data export to be effective for their internal reporting?
