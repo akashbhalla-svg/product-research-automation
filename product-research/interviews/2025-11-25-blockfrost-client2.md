@@ -40,8 +40,23 @@ https://docs.google.com/document/d/1oTAdwK8Pxj-do_FwNbI9m9cAxWvv6b41XuaoOHiaTvc/
 - REQ-003 – Provide strong SLAs and observability for slice freshness and correctness.
 
 ## Gemini-normalised summary
+- Persona: A mid-size Cardano Stake Pool Operator (SPO) who needs to query historical on-chain data.
+- Top 3 pains:
+  - "I have to run and maintain my own heavy, expensive infrastructure just to get consistent, queryable historical views of the chain."
+  - "The APIs I use are built for 'latest state' queries, not for the longitudinal analysis I need, like tracking a delegator's full history."
+  - "My internal tools for re-indexing specific data sets are fragile and a huge time sink for my team whenever we need to debug delegation issues."
+- JTBD:
+  - "When I need to investigate a delegator’s history, I want to query a reliable slice of data instead of re-indexing it myself."
+  - "When I build monitoring and alerting, I want to use clean, pre-packaged data primitives for stake movement over time."
+- Suggested requirements:
+  - REQ-001 – First-class 'delegation history' data slice
+  - REQ-002 – Subscription to managed historical data slices
 
-
+SOURCE_ANALYSIS = {
+  "used_pm_notes": 100,
+  "used_transcript": 0,
+  "reasoning": "The PM notes were highly specific to the user's problem, while the provided transcript was about a completely different and unrelated topic."
+}
 ## Note - how to use this:
 
 When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
