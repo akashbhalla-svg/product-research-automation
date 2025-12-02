@@ -41,24 +41,4 @@ https://docs.google.com/document/d/1nYSxzZNyHzRm9guPZHH6auT9MaF21DgL1ri1RWfmu5o/
 - REQ-012 – Simple finance-friendly export (CSV / API) for internal reporting.
 
 ## Gemini-normalised summary
-- Persona: Head of Engineering at a mid-size SaaS company building on Cardano.
-- Top 3 pains:
-  - I can't see how much each of our features or projects is costing us in API and on-chain fees.
-  - I'm afraid of getting a surprise bill when our user traffic spikes during a release or campaign.
-  - It's difficult to justify our infrastructure costs to the finance team because the billing model is opaque.
-- JTBD:
-  - When I ship a new chain-backed feature, I want to forecast and monitor its cost so I can get finance sign-off.
-  - When traffic spikes, I want guardrails so we don’t accidentally blow the budget.
-- Suggested requirements:
-  - REQ-001 – Per-project and per-feature cost dashboards
-  - REQ-002 – Project-level budget caps and alerts
-  - REQ-003 – Finance-friendly data export (CSV/API)
 
-SOURCE_ANALYSIS = {
-  "used_pm_notes": 100,
-  "used_transcript": 0,
-  "reasoning": "The PM notes provided a clear signal on cost management pains, while the transcript was about an unrelated technical feature request."
-}
-## Note - how to use this:
-
-When you do an interview, copy this file, rename it e.g.: yyyy-mm-dd-int-001-{product}-{user name}.md and update the front-matter + sections.
