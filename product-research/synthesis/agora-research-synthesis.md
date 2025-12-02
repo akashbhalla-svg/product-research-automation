@@ -8,15 +8,15 @@ interviews_considered: ["2025-11-03-int-001-agora-pi-lanningham","agora-liqwid-0
 
 ## Top themes by persona
 - DApp Developer / SPO:
-  - *[No specific themes could be extracted as the interview summary was empty.]*
+  - No themes identified from the provided summaries.
 - DApp Developer / DeFi Protocol:
-  - *[No specific themes could be extracted as the interview summary was empty.]*
+  - No themes identified from the provided summaries.
 
 ## Cross-cutting pains
-- *[No cross-cutting pains could be identified as the interview summaries provided were empty.]*
+- No cross-cutting pains were identified from the provided summaries.
 
 ## Mapped requirements
-- REQ-001 – *[No requirements could be mapped as the interview summaries provided were empty.]*
+- No requirements were identified from the provided summaries.
 
 ## Open questions
-- *[No open questions could be derived as the interview summaries provided were empty.]*
+- No open questions were identified from the provided summaries.
