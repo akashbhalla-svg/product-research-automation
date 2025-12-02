@@ -23,7 +23,7 @@ Interview with Pi Lanningham, Lead/CTO at Sunday Labs (SundaeSwap). We spoke to 
 -   **Collaboration:** Sunday Labs is very interested in contributing dev expertise (Decentralized systems, Cardano, Midnight) to the working group.
 
 ## Transcript link
-https://docs.google.com/document/d/1hGtEtGCKqbRWwYapWLBKcYRalbss9SZkPlFIHTdNfM0/edit?tab=t.v85bedvhyk4j
+https://docs.google.com/document/d/1hGtEtGCKqbRWwYapWLBKcYRalbss9SZkPlFIHTdNfM0/
 
 ## Key pains (human-curated)
 -   **Phishing & Scam Risk:** Reliance on Web2 channels (Twitter, Discord, Telegram) exposes users to impersonators and wallet drainers; there is no authenticated, secure channel to reach users.
